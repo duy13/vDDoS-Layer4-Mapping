@@ -1,5 +1,11 @@
+cd0ec6ea3e220f7497dc527564e29949  opensource/CloudFlare-API-Block-IP.sh
+805eb8281495f84eb2f5716ce2827dfd  opensource/CloudFlare-API-Captcha-All-Country.sh
+4fae3d935f857f89372fc3e0e42e75d2  opensource/CloudFlare-API-Remove-All-Rules.sh
+fd8387b174200b25bc5182baa3edcd14  opensource/CloudFlare-API-Show-Info.sh
+58197c4dde264203a689d34c772eb157  opensource/CloudFlare-API-Whitelist-Botsearch.sh
 d12cf6a8bb73a854a59dab7080df0086  countrylist-willcaptcha.txt
 6a342dbb17b2f2ea4ec0e64d2157614d  jq-1.5-linux64
-e1ff76400b46549beb535c6bd8ed64ca  md5sum.txt
+978b4afbe90d13e0a9197f33398cbada  md5sum.txt
 449eaa37a950d0ca4a24930df89fa69d  README.md
-834f6a8ab6b36bf13ff620fd9a2ff83a  vddos-layer4-mapping
+bb38bf367e1154ade0fe9842d757a110  vddos-layer4-mapping
+834f6a8ab6b36bf13ff620fd9a2ff83a  vddos-layer4-mapping.old-api.08.2017

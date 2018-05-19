@@ -15,10 +15,10 @@ fullrawinfo=`curl --silent -X GET "https://api.cloudflare.com/client/v4/zones/$z
 fullinfo=`echo "$fullrawinfo"|jq .`
 
 ################### Cho ra tổng số rule:
-numberrule=`echo "$fullinfo"| grep "total_count"|awk {'print $2'}`
-echo "Tong rule la: $numberrule"
+numberrule=`echo "$fullinfo"| grep "total_count"|awk {'print $2'}|  tr -dc '0-9'`
+echo "Total rules: $numberrule"
 ################### Cho ra full ID Rules:
 idrulelist=`echo "$fullinfo" | grep '"id":' |sed "/.*$zone.*/d" | awk {'print $2'}| tr -d ','|tr -d '"'`
-echo "Danh sach ID la:
+echo "ID list:
 $idrulelist"
 

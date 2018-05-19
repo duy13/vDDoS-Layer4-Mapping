@@ -15,7 +15,7 @@ fullrawinfo=`curl --silent -X GET "https://api.cloudflare.com/client/v4/zones/$z
 fullinfo=`echo "$fullrawinfo"|jq .`
 
 ################### Cho ra tổng số rule lau dau tiên:
-numberrule=`echo "$fullinfo"| grep "total_count"|awk {'print $2'}`
+numberrule=`echo "$fullinfo"| grep "total_count"|awk {'print $2'}|  tr -dc '0-9'`
 #echo "Tong rule la: $numberrule"
 
 mkdir -p /tmp/vddos/vddos-layer4-mapping-cf-remove-all-rule
@@ -66,9 +66,9 @@ do
 donglon=$((donglon + 1))
 sleep 5
 ################### Cho ra tổng số rule lau dau tiên:
-numberrule=`echo "$fullinfo"| grep "total_count"|awk {'print $2'}`
+numberrule=`echo "$fullinfo"| grep "total_count"|awk {'print $2'}|  tr -dc '0-9'`
 # Nếu rule vẫn lớn hơn 0 thì tiếp tục lặp
-echo "Da xoa $((rulebandau-numberrule)) rule van con $numberrule rules"
+echo "Removed rule $((rulebandau-numberrule)). The remaining rules $numberrule"
 done
 
 
