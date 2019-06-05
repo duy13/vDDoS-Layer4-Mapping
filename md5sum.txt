@@ -6,6 +6,5 @@ fd8387b174200b25bc5182baa3edcd14  opensource/CloudFlare-API-Show-Info.sh
 d12cf6a8bb73a854a59dab7080df0086  countrylist-willcaptcha.txt
 6a342dbb17b2f2ea4ec0e64d2157614d  jq-1.5-linux64
 978b4afbe90d13e0a9197f33398cbada  md5sum.txt
-449eaa37a950d0ca4a24930df89fa69d  README.md
-bb38bf367e1154ade0fe9842d757a110  vddos-layer4-mapping
-834f6a8ab6b36bf13ff620fd9a2ff83a  vddos-layer4-mapping.old-api.08.2017
+6c019e1a15044d52c701fc88af2049dc  README.md
+3a614c3711ffa4a7f50f99b57a132666  vddos-layer4-mapping

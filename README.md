@@ -79,7 +79,34 @@ Restart CSF:
 csf -r && csf -q && service lfd restart
 ```
 
-3/ More Config:
+3/ CloudFlare API Control Command:
+---------------
+Change Security Level:
+```
+vddos-layer4 Security-Level-CloudFlare    [email] [api] [zoneid] [essentially_off|low|medium|high|under_attack] 
+```
+
+Captcha All Country:
+```
+vddos-layer4 Captcha-All-Country-CloudFlare   [email] [api] [zoneid]
+```
+
+Remove-All-Rules:
+```
+vddos-layer4 Remove-All-Rules-CloudFlare      [email] [api] [zoneid]
+```
+
+Example:
+```
+/usr/bin/vddos-layer4 Security-Level-CloudFlare usercf@cloudflare.com f3aa24e0debfe5157629856afa4671bb 6dc6afc194bf744cd0f8c45bf3303afc under_attack
+
+/usr/bin/vddos-layer4 Captcha-All-Country-CloudFlare usercf@cloudflare.com f3aa24e0debfe5157629856afa4671bb 6dc6afc194bf744cd0f8c45bf3303afc
+
+/usr/bin/vddos-layer4 Remove-All-Rules-CloudFlare usercf@cloudflare.com f3aa24e0debfe5157629856afa4671bb 6dc6afc194bf744cd0f8c45bf3303afc
+
+```
+
+4/ More Config:
 ---------------
 Document: http://vddos.voduy.com
 ```
